@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Viktoriia Zybina](https://up.htmlacademy.ru/adaptive/12/user/349035).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Белов](https://htmlacademy.ru/profile/id96038).
 
 ---
 
