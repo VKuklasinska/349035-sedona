@@ -25,90 +25,89 @@
       <h1 class="visually-hidden">Форма отзыва</h1>
 
       <section class="review">
-        <header class="review-form__header intro">
+        <header class="review__header intro">
           <h2 class="intro__heading">Оставьте свой отзыв</h2>
           <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
         <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="review-form__part introduce">
-            <h3 class="review-form__title">Представьтесь:</h3>
-            <div class="introduce__field">
-              <label class="introduce__label" for="user-name">Имя*:</label>
-              <input class="introduce__input" type="text" id="user-name" name="user-name" placeholder="Петр">
+          <fieldset class="review-form__part">
+            <legend class="review-form__title">Представьтесь:</legend>
+            <div class="review-form__field">
+              <label class="review-form__label review-form__label--uppercase" for="user-name">Имя*:</label>
+              <input class="review-form__input" type="text" id="user-name" name="user-name" placeholder="Петр">
             </div>
-            <div class="introduce__field">
-              <label class="introduce__label" for="user-surname">Фамилия*:</label>
-              <input class="introduce__input" type="text" id="user-surname" name="user-surname" placeholder="Иванов">
+            <div class="review-form__field">
+              <label class="review-form__label review-form__label--uppercase" for="user-surname">Фамилия*:</label>
+              <input class="review-form__input" type="text" id="user-surname" name="user-surname" placeholder="Иванов">
             </div>
-            <div class="introduce__field">
-              <label class="introduce__label" for="user-patronymic">Отчество:</label>
-              <input class="introduce__input" type="text" id="user-patronymic" name="user-patronymic" placeholder="Александрович">
+            <div class="review-form__field">
+              <label class="review-form__label review-form__label--uppercase" for="user-patronymic">Отчество:</label>
+              <input class="review-form__input" type="text" id="user-patronymic" name="user-patronymic" placeholder="Александрович">
             </div>
-          </div>
+          </fieldset>
 
-          <div class="review-form__part contact">
-            <h3 class="review-form__title">Контактная информация:</h3>
-            <ul class="contact__list">
-              <li class="contact__telephone">
-                <label class="contact__label" for="telephone">Контактный телефон*:</label>
-                <input class="contact__input contact__input--telephone" type="tel" name="tel" id="telephone" placeholder="Введите телефон">
+          <fieldset class="review-form__part">
+            <legend class="review-form__title">Контактная информация:</legend>
+            <ul class="review-form__list">
+              <li class="review-form__telephone">
+                <label class="review-form__label review-form__label--uppercase" for="telephone">Контактный телефон*:</label>
+                <input class="review-form__input review-form__input--telephone" type="tel" name="tel" id="telephone" placeholder="Введите телефон">
               </li>
-              <li class="contact__telephone">
-                <label class="contact__label" for="email">Электронная почта*:</label>
-                <input class="contact__input contact__input--email" type="email" name="email" id="email" placeholder="Введите e-mail">
+              <li class="review-form__email">
+                <label class="review-form__label review-form__label--uppercase" for="email">Электронная почта*:</label>
+                <input class="review-form__input review-form__input--email" type="email" name="email" id="email" placeholder="Введите e-mail">
               </li>
             </ul>
-          </div>
+          </fieldset>
 
-          <div class="review-form__part impression">
-            <h3 class="review-form__title">Ваше Общее впечатление:</h3>
-            <ul class="impression__list">
-              <li class="impression_item">
-                <input class="impression__radio" type="radio" id="impression1" name="impression" checked>
-                <label class="impression__label" for="impression1">Скорее положительное</label>
+          <fieldset class="review-form__part">
+            <legend class="review-form__title">Ваше Общее впечатление:</legend>
+            <ul class="review-form__list">
+              <li class="review-form_item">
+                <input class="review-form__input impression__input--radio" type="radio" id="impression1" name="impression" checked>
+                <label class="review-form__label" for="impression1">Скорее положительное</label>
               </li>
-              <li class="impression_item">
-                <input class="impression__radio" type="radio" id="impression2" name="impression">
-                <label class="impression__label" for="impression2">Скорее отрицательное</label>
+              <li class="review-form_item">
+                <input class="review-form__input review-form__input--radio" type="radio" id="impression2" name="impression">
+                <label class="review-form__label" for="impression2">Скорее отрицательное</label>
               </li>
-              <li class="impression_item">
-                <input class="impression__radio" type="radio" id="impression3" name="impression">
-                <label class="impression__label" for="impression3">Затрудняюсь ответить</label>
+              <li class="review-form_item">
+                <input class="review-form__input review-form__input--radio" type="radio" id="impression3" name="impression">
+                <label class="review-form__label" for="impression3">Затрудняюсь ответить</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
 
-          <div class="review-form__part attractions">
-            <h3 class="review-form__title">Посещенные достопримечательности:</h3>
-            <ul class="attractions__list">
-              <li class="attractions__item">
-                <input class="attractions__checkbox" type="checkbox" id="attraction1" name="attraction" checked>
-                <label class="attractions__label" for="attraction1">Мост Дьявола</label>
+          <fieldset class="review-form__part">
+            <legend class="review-form__title">Посещенные достопримечательности:</legend>
+            <ul class="review-form__list">
+              <li class="review-form__item">
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction1" name="attraction" checked>
+                <label class="review-form__label" for="attraction1">Мост Дьявола</label>
               </li>
               <li class="attractions__item">
-                <input class="attractions__checkbox" type="checkbox" id="attraction2" name="attraction" checked>
-                <label class="attractions__label" for="attraction2">Слайд-парк</label>
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction2" name="attraction" checked>
+                <label class="review-form__label" for="attraction2">Слайд-парк</label>
               </li>
               <li class="attractions__item">
-                <input class="attractions__checkbox" type="checkbox" id="attraction3" name="attraction">
-                <label class="attractions__label" for="attraction3">Гора-Колокол</label>
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction3" name="attraction">
+                <label class="review-form__label" for="attraction3">Гора-Колокол</label>
               </li>
               <li class="attractions__item">
-                <input class="attractions__checkbox" type="checkbox" id="attraction4" name="attraction" checked>
-                <label class="attractions__label" for="attraction4">Красные скалы</label>
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction4" name="attraction" checked>
+                <label class="review-form__label" for="attraction4">Красные скалы</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
 
-          <div class="review-form__part describe">
-            <h3 class="review-form__title">Опишите свои эмоции:</h3>
-            <textarea rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
-          </div>
+          <fieldset class="review-form__part">
+            <legend class="review-form__title">Опишите свои эмоции:</legend>
+            <textarea class="review-form__comment" rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
 
-          <button type="button">Отправить отзыв</button>
+          <button class="btn review-form__btn" type="button">Отправить отзыв</button>
         </form>
-
       </section>
 
       <section class="recommendation">
