@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -18,7 +19,7 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="http://via.placeholder.com/104x83" width="104" height="83" alt="City of Sedona">
       </a>
-      <img src="http://via.placeholder.com/320x391" width="320" height="391" alt="Welcome to Sedona">
+      <img class="page-header__background-image page-header__background-image--full" src="http://via.placeholder.com/320x391" width="320" height="391" alt="Welcome to Sedona">
     </header>
 
     <main class="page-main">
@@ -38,18 +39,18 @@
           <div class="feature__image--wrapper">
             <img class="feature__image" src="http://via.placeholder.com/320x260" width="320" height="260" alt="Настоящий городок">
           </div>
-          <ul class="feature__list main-points">
-            <li class="main-points__hint main-points__hint--home">
-              <h4 class="main-points__title">Жилье</h4>
-              <p class="main-points__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <ul class="feature__list">
+            <li class="feature__point feature__point--home">
+              <h4 class="feature__point-title">Жилье</h4>
+              <p class="feature__point-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="main-points__hint main-points__hint--souvenirs">
-              <h4 class="main-points__title">Сувениры</h4>
-              <p class="main-points__text">Не только китайского, но и местного производства!</p>
+            <li class="feature__point feature__point--souvenirs">
+              <h4 class="feature__point-title">Сувениры</h4>
+              <p class="feature__point-text">Не только китайского, но и местного производства!</p>
             </li>
-            <li class="main-points__hint main-points__hint--food">
-              <h4 class="main-points__title">Еда</h4>
-              <p class="main-points__text">Не только китайского, но и местного производства!</p>
+            <li class="feature__point feature__point--food">
+              <h4 class="feature__point-title">Еда</h4>
+              <p class="feature__point-text">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </article>
@@ -86,7 +87,7 @@
         <a class="hotel-search__button button" href="#">Найти гостиницу</a>
       </section>
 
-      <iframe src="http://via.placeholder.com/320x351" width="320" height="351"></iframe>
+      <iframe class="map" src="http://via.placeholder.com/320x351" width="320" height="351"></iframe>
     </main>
 
     <footer class="page-footer">
