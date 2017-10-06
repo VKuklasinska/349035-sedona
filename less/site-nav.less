@@ -1,10 +1,37 @@
 .site-nav {
   .list-style;
+  font-weight: bold;
 }
 
-.site-nav__item a {
-  .link-style;
-  .button;
-  font-weight: bold;
+.site-nav a {
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+
   font-size: 18px;
+
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: @blue;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.site-nav a[href] {
+  &:hover {
+    background-color: #669ec0;
+    border-top-color: #86b2cd;
+    border-bottom-color: #cccccc;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+    border-top-color: #77acca;
+    border-bottom-color: #cccccc;
+  }
 }
