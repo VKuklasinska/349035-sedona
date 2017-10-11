@@ -3,6 +3,16 @@
   text-align: center;
   color: white;
   padding: 40px 20px;
+  width: 280px;
+}
+
+.features__example {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.feature__image--wrapper {
+  height: 260px;
 }
 
 .feature__title {
@@ -27,13 +37,151 @@
   background-color: @grey;
   text-align: center;
   padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 39px;
 }
 
 .feature--grey {
   padding: 28px 0;
+  width: 280px;
   border-bottom: #d6d6d6 solid 1px;
 }
 
 .feature--grey:last-child {
   border-bottom: none;
+}
+
+.feature__list {
+  .list-style;
+  padding-left: 70px;
+  padding-right: 43px;
+  margin-top: 39px;
+  margin-bottom: 39px;
+
+  .feature__point-title,  {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .feature__point-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 33px;
+  }
+}
+
+.feature__point:last-of-type .feature__point-text {
+  margin-bottom: 0;
+}
+
+.feature__point {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    top: -5px;
+    left: -50px;
+    background-color: yellow;
+  }
+  &--home {
+    background: url(../img/) no-repeat 0 0;
+  }
+  &--souvenirs {
+    background: url(../img/) no-repeat 0 0;
+  }
+  &--food {
+    background: url(../img/) no-repeat 0 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__example {
+    width: 768px;
+  }
+
+  .feature--blue {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feature__wrapper {
+    width: 165px;
+    padding: 43px 45px;
+  }
+
+  .feature__title {
+    font-size: 21px;
+    margin-bottom: 11px;
+    min-height: 52px;
+  }
+
+  .feature__description {
+    margin-top: 25px;
+  }
+
+  .feature__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 65px 0;
+  }
+
+  .feature__point {
+    text-align: center;
+    flex-basis: 163px;
+    padding-top: 102px;
+
+    &--home {
+    order: 1;
+    }
+
+    &--food {
+    order: 2;
+    }
+
+    &--souvenirs {
+    order: 3;
+    }
+  }
+
+  .feature__point {
+    &::before {
+      width: 74px;
+      height: 79px;
+      top: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: yellow;
+    }
+  }
+
+  .feature__list .feature__point-title {
+    font-size: 21px;
+  }
+
+  .feature__list .feature__point-text {
+    margin-bottom: 0;
+  }
+
+  .feature__wrapper--grey {
+    padding: 48px 0;
+    width: 768px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 56px;
+  }
+
+  .feature--grey {
+    padding: 0;
+    width: 160px;
+    border-bottom: none;
+    text-align: center;
+  }
 }

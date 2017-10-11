@@ -7,15 +7,11 @@
   text-decoration: none;
   display: block;
   padding: 15px 0;
-
   font-size: 18px;
-
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
   text-align: center;
-
   background-color: @blue;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
@@ -33,5 +29,35 @@
     background-color: #5496bd;
     border-top-color: #77acca;
     border-bottom-color: #cccccc;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-nav__item {
+    flex-basis: 153px;
+  }
+
+  .site-nav__item:nth-child(2) {
+    margin-right: 153px;
+  }
+
+  .site-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    border-top: none;
+    border-bottom: none;
   }
 }

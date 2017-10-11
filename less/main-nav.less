@@ -83,3 +83,24 @@
 .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs .site-nav__item {
+      display: block;
+    }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 55px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list::after {
+    box-shadow: none;
+  }
+}

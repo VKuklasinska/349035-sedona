@@ -1,6 +1,7 @@
 @blue: #81b3d2;
 @grey: #eeeeee;
 @mobile-width-only: 767px;
+@tablet-width: 768px;
 
 .list-style {
   list-style: none;
@@ -8,12 +9,27 @@
   margin: 0;
 }
 
-.button {
+.button(@padding-top: 16px, @font-size: 21px) {
   background-color: @blue;
+  font-size: @font-size;
   display: block;
   color: white;
   text-align: center;
-  padding: 16px 0;
+  padding-top: @padding-top;
+  padding-bottom: @padding-top;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    background-color: #e5e5e5;
+    color: white;
+  }
 }
 
 .generate-block(@block-name, @heading-font-size: 18px, @heading-margin-bottom: 33px) {
@@ -23,6 +39,8 @@
     padding-right: 25px;
     padding-bottom: 28px;
     padding-top: 39px;
+    width: 270px;
+    margin: 0 auto;
     }
   .@{block-name}__heading {
     font-size: @heading-font-size;
