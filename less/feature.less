@@ -1,3 +1,4 @@
+
 .feature__wrapper {
   background-color: @blue;
   text-align: center;
@@ -183,5 +184,43 @@
     width: 160px;
     border-bottom: none;
     text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__example {
+    width: 1200px;
+  }
+
+  .feature__wrapper {
+    width: 268px;
+    padding: 48px 66px 59px 66px;
+  }
+
+  .feature__title {
+    padding: 0 55px;
+    margin-bottom: 11px;
+  }
+
+  .feature__image--wrapper {
+    width: 800px;
+  }
+
+  .feature__point {
+    flex-basis: 289px;
+  }
+
+  .feature__list {
+    margin-bottom: 80px;
+  }
+
+  .feature__wrapper--grey {
+    padding: 70px 0;
+    width: 1200px;
+    margin-bottom: 80px;
+  }
+
+  .feature--grey {
+    width: 270px;
   }
 }
