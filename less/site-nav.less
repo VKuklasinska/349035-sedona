@@ -60,6 +60,20 @@
     border-top: none;
     border-bottom: none;
   }
+
+  .site-nav a[href] {
+    &:hover {
+      color: @blue;
+      background-color: white;
+      border: none;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: white;
+      border: none;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
