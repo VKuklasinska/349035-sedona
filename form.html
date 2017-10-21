@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sedona</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -26,9 +27,9 @@
       <h1 class="visually-hidden">Форма отзыва</h1>
 
       <section class="review">
-        <header class="review__header intro">
-          <h2 class="intro__heading">Оставьте свой отзыв</h2>
-          <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <header class="review__header">
+          <h2 class="review__heading">Оставьте свой отзыв</h2>
+          <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
         <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
@@ -81,7 +82,7 @@
           </fieldset>
 
           <fieldset class="review-form__part review-form__part--sightseeing">
-            <legend class="review-form__title">Посещенные<br>достопримечательности:</legend>
+            <legend class="review-form__title">Посещенные достопримечательности:</legend>
             <ul class="review-form__list">
               <li class="review-form__item">
                 <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction1" name="attraction" checked>
@@ -104,7 +105,7 @@
 
           <fieldset class="review-form__part review-form__part--comment">
             <legend class="review-form__title">Опишите свои эмоции:</legend>
-            <textarea class="review-form__comment" rows="3" cols="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="review-form__comment" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
           <button class="review-form__btn button" type="button">Отправить отзыв</button>
