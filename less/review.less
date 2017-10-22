@@ -197,7 +197,7 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 12px;
-  width: 280px;
+  width: 100%;
   .review-form__label {
     padding-left: 20px;
     padding-bottom: 7px;
@@ -209,7 +209,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 280px;
+  width: 100%;
   .review-form__label {
     padding-left: 20px;
     padding-bottom: 7px;
@@ -259,8 +259,9 @@
 
 .review-form__comment {
   padding-top: 12px;
+  padding-bottom: 12px;
   width: 236px;
-  min-height: 138px;
+  min-height: 126px;
   background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
@@ -283,10 +284,12 @@
   .review__header {
     margin: 0 auto;
     width: 438px;
-    padding-bottom: 64px;
+    padding-top: 74px;
+    padding-bottom: 60px;
     border-bottom: none;
-    .intro__heading {
+    .review__heading {
       font-size: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -315,7 +318,9 @@
     justify-content: space-between;
   }
 
-  .review-form__title {
+  .review-form__part .review-form__title {
+    font-size: 21px;
+    line-height: 26px;
     padding: 0;
   }
 
@@ -355,16 +360,15 @@
     border-right: 1px solid #dbdbdb;
     font-family: "PT Sans", sans-serif;
     text-align: left;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
     .review-form__list {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 214px;
     }
-
     .review-form__title {
-      margin-bottom: 55px;
+      margin-bottom: 57px;
       padding-top: 15px;
       text-align: left;
       display: block;
@@ -373,44 +377,52 @@
 
   .review-form__part--introduction {
     width: 266px;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
     .review-form__title {
-      margin-bottom: 55px;
+      display: block;
+      text-align: left;
+      margin-bottom: 57px;
       padding-top: 14px;
       font-family: "PT Sans", sans-serif;
     }
   }
 
   .review-form__part--contact {
+    border-top: 1px solid #dbdbdb;
     width: 100%;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     .review-form__input {
       width: 602px;
     }
     .review-form__title {
-      margin-bottom: 32px;
+      margin-bottom: 24px;
+      width: 398px;
     }
   }
 
+  .review-form__telephone {
+    margin-bottom: 23px;
+  }
+
   .review-form__part--sightseeing {
-    border: 1px solid grey;
+    border-top: 1px solid #dbdbdb;
     width: 100%;
     margin-bottom: 68px;
     .review-form__title {
       position: relative;
       margin-bottom: 43px;
       display: block;
-      width: 270px;
+      width: 398px;
     }
 
     .review-form__list {
-      width: 463px;
+      width: 456px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
-      height: 146px;
+      height: 142px;
     }
 
     .review-form__item {
@@ -423,13 +435,26 @@
   }
 
   .review-form__part--comment {
+    border-top: 1px solid #dbdbdb;
     width: 100%;
+
     .review-form__title {
       margin-bottom: 59px;
+      width: 398px;
     }
     .review-form__comment {
       width: 648px - 38 - 6;
+      min-height: 129px;
     }
+  }
+
+  .review-form__part:last-of-type {
+    padding-bottom: 50px;
+  }
+
+  .review-form__btn {
+    margin-bottom: 97px;
+
   }
 
 }
