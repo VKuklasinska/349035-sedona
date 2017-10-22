@@ -55,7 +55,6 @@
 
 .review-form__input,
 .review-form__comment {
-  padding: 0;
   border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
   font-size: 18px;
@@ -159,7 +158,6 @@
 
 .review-form__label--checkbox:hover::before {
   background-color: #e5e5e5;
-
 }
 
 .review-form__label--checkbox:active::before {
@@ -167,14 +165,14 @@
 }
 
 .review-form__input--checkbox:checked + .review-form__label--checkbox::before {
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.review-form__input--checkbox:checked + .review-form__label--checkbox:active::before {
-
-}
+// .review-form__input--checkbox:checked + .review-form__label--checkbox:active::before {
+//
+// }
 
 .review-form__field {
   display: flex;
@@ -243,13 +241,13 @@
 }
 
 .review-form__telephone::after {
-  background-image: url(../img/icon-phone.svg);
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .review-form__email::after {
-  background-image: url(../img/icon-mail.svg);
+  background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -303,18 +301,6 @@
     }
   }
 
-  .review-form__part {
-
-    .fieldset-style;
-    padding: 0;
-    border-bottom: 1px solid #e5e5e5;
-    display: table-cell;
-
-    &:not(:last-child) {
-      border-bottom: none;
-    }
-  }
-
   .review-form__must-fill {
     display: inline-block;
     line-height: 59px;
@@ -337,6 +323,14 @@
   }
 
   .review-form__part {
+    .fieldset-style;
+    padding: 0;
+    border-bottom: 1px solid #e5e5e5;
+    display: table-cell;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
 
     &--impression {
       order: 1;
