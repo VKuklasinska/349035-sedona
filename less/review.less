@@ -331,22 +331,6 @@
     &:not(:last-child) {
       border-bottom: none;
     }
-
-    &--impression {
-      order: 1;
-    }
-
-    &--introduction {
-      order: 2;
-    }
-
-    &--contact {
-      order: 3;
-    }
-
-    &--sightseeing {
-      order: 4;
-    }
   }
 
   .review-form__btn {
@@ -365,6 +349,7 @@
     font-family: "PT Sans", sans-serif;
     text-align: left;
     margin-bottom: 70px;
+    order: 1;
 
     .review-form__list {
       display: flex;
@@ -384,6 +369,7 @@
   .review-form__part--introduction {
     width: 266px;
     margin-bottom: 70px;
+    order: 2;
 
     .review-form__title {
       display: block;
@@ -398,6 +384,7 @@
     border-top: 1px solid #dbdbdb;
     width: 100%;
     margin-bottom: 53px;
+    order: 3;
 
     .review-form__input {
       width: 602px;
@@ -417,6 +404,7 @@
     border-top: 1px solid #dbdbdb;
     width: 100%;
     margin-bottom: 68px;
+    order: 4;
 
     .review-form__title {
       position: relative;
@@ -516,7 +504,6 @@
   }
 
   .review-form__part--contact {
-
     .review-form__list {
       display: flex;
       justify-content: space-between;
