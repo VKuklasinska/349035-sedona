@@ -1,0 +1,75 @@
+.page-footer {
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.page-footer__hashtag {
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 36px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  .copyright__text {
+    font-size: 14px;
+    line-height: 34px;
+    margin-right: 13px;
+    letter-spacing: 0.3px;
+  }
+
+  .copyright__link {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    background: url(../img/logo-htmlacademy.svg) no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 768px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .page-footer__hashtag {
+    margin-bottom: 0;
+  }
+
+  .page-footer {
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1024px;
+    padding-left: 133px;
+    padding-right: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      margin-bottom: 37px;
+  }
+
+  .page-footer__hashtag {
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin-right: 95px;
+  }
+
+  .page-footer__copyright {
+    // margin-right: 20px;
+  }
+}

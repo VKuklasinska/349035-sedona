@@ -2,36 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item"><a href="index.html">Главная</a></li>
           <li class="site-nav__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-nav__item"><a>Форма отзыва</a></li>
+          <li class="site-nav__item site-nav__item--active"><a>Форма отзыва</a></li>
           <li class="site-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://via.placeholder.com/104x83" width="104" height="83" alt="City of Sedona">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="104" height="83" alt="City of Sedona">
       </a>
-      <img src="http://via.placeholder.com/320x158" width="320" height="158" alt="Welcome to Sedona">
+      <div class="page-header__background-image--small"></div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Форма отзыва</h1>
 
       <section class="review">
-        <header class="review__header intro">
-          <h2 class="intro__heading">Оставьте свой отзыв</h2>
-          <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <header class="review__header">
+          <h2 class="review__heading">Оставьте свой отзыв</h2>
+          <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
         <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review-form__part">
+          <fieldset class="review-form__part review-form__part--introduction">
             <legend class="review-form__title">Представьтесь:</legend>
             <div class="review-form__field">
               <label class="review-form__label review-form__label--uppercase" for="user-name">Имя*:</label>
@@ -47,11 +49,11 @@
             </div>
           </fieldset>
 
-          <fieldset class="review-form__part">
+          <fieldset class="review-form__part review-form__part--contact">
             <legend class="review-form__title">Контактная информация:</legend>
             <ul class="review-form__list">
               <li class="review-form__telephone">
-                <label class="review-form__label review-form__label--uppercase" for="telephone">Контактный телефон*:</label>
+                <label class="review-form__label review-form__label--uppercase" for="telephone"><span class="review-form--hide">Контактный</span> телефон*:</label>
                 <input class="review-form__input review-form__input--telephone" type="tel" name="tel" id="telephone" placeholder="Введите телефон">
               </li>
               <li class="review-form__email">
@@ -61,59 +63,55 @@
             </ul>
           </fieldset>
 
-          <fieldset class="review-form__part">
+          <fieldset class="review-form__part review-form__part--impression">
             <legend class="review-form__title">Ваше Общее впечатление:</legend>
             <ul class="review-form__list">
-              <li class="review-form_item">
-                <input class="review-form__input impression__input--radio" type="radio" id="impression1" name="impression" checked>
-                <label class="review-form__label" for="impression1">Скорее положительное</label>
+              <li class="review-form__item">
+                <input class="review-form__input review-form__input--radio" type="radio" id="impression1" name="impression" checked>
+                <label class="review-form__label review-form__label--radio" for="impression1">Скорее положительное</label>
               </li>
-              <li class="review-form_item">
+              <li class="review-form__item">
                 <input class="review-form__input review-form__input--radio" type="radio" id="impression2" name="impression">
-                <label class="review-form__label" for="impression2">Скорее отрицательное</label>
+                <label class="review-form__label review-form__label--radio" for="impression2">Скорее отрицательное</label>
               </li>
-              <li class="review-form_item">
+              <li class="review-form__item">
                 <input class="review-form__input review-form__input--radio" type="radio" id="impression3" name="impression">
-                <label class="review-form__label" for="impression3">Затрудняюсь ответить</label>
+                <label class="review-form__label review-form__label--radio" for="impression3">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="review-form__part">
+          <fieldset class="review-form__part review-form__part--sightseeing">
             <legend class="review-form__title">Посещенные достопримечательности:</legend>
             <ul class="review-form__list">
               <li class="review-form__item">
                 <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction1" name="attraction" checked>
-                <label class="review-form__label" for="attraction1">Мост Дьявола</label>
+                <label class="review-form__label review-form__label--checkbox" for="attraction1">Мост Дьявола</label>
               </li>
-              <li class="attractions__item">
+              <li class="review-form__item">
                 <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction2" name="attraction" checked>
-                <label class="review-form__label" for="attraction2">Слайд-парк</label>
+                <label class="review-form__label review-form__label--checkbox" for="attraction2">Слайд-парк</label>
               </li>
-              <li class="attractions__item">
+              <li class="review-form__item">
                 <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction3" name="attraction">
-                <label class="review-form__label" for="attraction3">Гора-Колокол</label>
+                <label class="review-form__label review-form__label--checkbox" for="attraction3">Гора-Колокол</label>
               </li>
-              <li class="attractions__item">
+              <li class="review-form__item">
                 <input class="review-form__input review-form__input--checkbox" type="checkbox" id="attraction4" name="attraction" checked>
-                <label class="review-form__label" for="attraction4">Красные скалы</label>
+                <label class="review-form__label review-form__label--checkbox" for="attraction4">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="review-form__part">
+          <fieldset class="review-form__part review-form__part--comment">
             <legend class="review-form__title">Опишите свои эмоции:</legend>
-            <textarea class="review-form__comment" rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="review-form__comment" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
-          <button class="btn review-form__btn" type="button">Отправить отзыв</button>
-        </form>
-      </section>
+          <button class="review-form__btn button" type="button">Отправить отзыв</button>
 
-      <section class="recommendation">
-        <h2 class="recommendation__title">Все еще сомневаетесь?</h2>
-        <p class="recommendation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="recommendation_video" src="videofile.ogg" width="320" height="270" controls></video>
+          <small class="review-form__must-fill">* - Обязательные поля</small>
+        </form>
       </section>
     </main>
 
@@ -122,20 +120,37 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твитере</a>
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твитере</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
   </body>

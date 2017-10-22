@@ -1,0 +1,260 @@
+
+.feature__wrapper {
+  background-color: @blue;
+  text-align: center;
+  color: white;
+  padding: 39px 20px 40px 20px;
+  width: 280px;
+  margin-top: 15px;
+}
+
+.features__example {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.feature__image--wrapper {
+  height: 260px;
+}
+
+.feature__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.feature__number, .feature__description {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.feature__description {
+  margin: 0 auto;
+  margin-top: 14px;
+  width: 250px;
+}
+
+.feature__wrapper--grey {
+  background-color: @grey;
+  text-align: center;
+  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.feature--grey {
+  padding: 27px 0;
+  width: 280px;
+  border-bottom: #d6d6d6 solid 1px;
+}
+
+.feature--grey:last-child {
+  border-bottom: none;
+}
+
+.feature__list {
+  .list-style;
+  padding-left: 70px;
+  padding-right: 40px;
+  margin-top: 35px;
+  margin-bottom: 37px;
+
+  .feature__point-title  {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  .feature__point-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 28px;
+  }
+}
+
+.feature__point:last-of-type .feature__point-text {
+  margin-bottom: 0;
+}
+
+.feature__point {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 41px;
+    height: 43px;
+    top: -11px;
+    left: -52px;
+    background-color: yellow;
+  }
+  &--home {
+    background: url(../img/) no-repeat 0 0;
+  }
+  &--souvenirs {
+    background: url(../img/) no-repeat 0 0;
+  }
+  &--food {
+    background: url(../img/) no-repeat 0 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__example {
+    width: 768px;
+  }
+
+  .feature--blue {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feature--blue:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+
+  .feature__wrapper {
+    width: 165px;
+    padding: 45px 45px 35px 45px;
+    margin-top: 0;
+  }
+
+  .feature__title {
+    font-size: 21px;
+    margin-bottom: 6px;
+    min-height: 52px;
+  }
+
+  .feature__description {
+    margin-top: 20px;
+    width: auto;
+  }
+
+  .feature__image--wrapper {
+    width: 513px;
+    height: 256px;
+    img {
+      height: inherit;
+    }
+  }
+
+  .feature__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 65px 0 60px 0;
+    .feature__point-title {
+      margin-bottom: 22px;
+    }
+  }
+
+  .feature__point {
+    text-align: center;
+    flex-basis: 163px;
+    padding-top: 94px;
+
+    &--home {
+    order: 1;
+    }
+
+    &--food {
+    order: 2;
+    }
+
+    &--souvenirs {
+    order: 3;
+    }
+  }
+
+  .feature__point {
+    &::before {
+      width: 78px;
+      height: 79px;
+      top: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: yellow;
+    }
+  }
+
+  .feature__list .feature__point-title {
+    font-size: 21px;
+  }
+
+  .feature__list .feature__point-text {
+    margin-bottom: 0;
+  }
+
+  .feature__wrapper--grey {
+    padding: 45px 0 42px 0;
+    width: 768px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 56px;
+  }
+
+  .feature--grey {
+    padding: 0;
+    width: 160px;
+    border-bottom: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__example {
+    width: 1200px;
+  }
+
+  .feature__wrapper {
+    width: 268px;
+    padding-left: 66px;
+    padding-right: 66px;
+    padding-top: 52px;
+  }
+
+  .feature__title {
+    padding: 0 45px;
+    margin-bottom: 6px;
+  }
+
+  .feature__image--wrapper {
+    width: 800px;
+  }
+
+  .feature__point {
+    flex-basis: 289px;
+  }
+
+  .feature__point--souvenirs .feature__point-text {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .feature__list {
+    margin-bottom: 81px;
+  }
+
+  .feature--blue:nth-of-type(2) .feature__description {
+    padding: 0 20px;
+  }
+
+  .feature__wrapper--grey {
+    padding: 45px 0 65px 0;
+    width: 1200px;
+    margin-bottom: 55px;
+  }
+
+  .feature--grey {
+    width: 285px;
+    .feature__title {
+      padding: 0 65px;
+    }
+  }
+}

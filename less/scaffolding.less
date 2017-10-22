@@ -1,0 +1,47 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/PTSansNarrow.woff2") format("woff2"), url("../fonts/PTSansNarrow.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/PTSansNarrowBold.woff2") format("woff2"), url("../fonts/PTSansNarrowBold.woff") format("woff");
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
