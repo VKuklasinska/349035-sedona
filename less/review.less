@@ -347,10 +347,6 @@
     &--sightseeing {
       order: 4;
     }
-
-    &--comment {
-      order: 5;
-    }
   }
 
   .review-form__btn {
@@ -358,6 +354,7 @@
     width: 324px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 97px;
   }
 
 
@@ -450,6 +447,7 @@
   .review-form__part--comment {
     border-top: 1px solid #dbdbdb;
     width: 100%;
+    order: 5;
 
     .review-form__title {
       margin-bottom: 59px;
@@ -465,12 +463,6 @@
   .review-form__part:last-of-type {
     padding-bottom: 50px;
   }
-
-  .review-form__btn {
-    margin-bottom: 97px;
-
-  }
-
 }
 
 
@@ -493,6 +485,8 @@
 
   .review-form__part--impression {
     margin-bottom: 67px;
+    width: 402px;
+    padding-right: 77px;
 
     .review-form__title {
       margin-bottom: 59px;
@@ -505,6 +499,7 @@
 
   .review-form__part--introduction {
     margin-bottom: 67px;
+    width: 402px;
 
     .review-form__title {
       margin-bottom: 59px;
@@ -518,15 +513,6 @@
 
   .review-form {
     width: 960px;
-  }
-
-  .review-form__part--introduction {
-    width: 402px;
-  }
-
-  .review-form__part--impression {
-    width: 402px;
-    padding-right: 77px;
   }
 
   .review-form__part--contact {
@@ -564,9 +550,9 @@
     }
   }
 
-.review-form__email .review-form__label {
-  flex-basis: 338px;
-}
+  .review-form__email .review-form__label {
+    flex-basis: 338px;
+  }
 
   .review-form--hide {
     display: none;
@@ -586,14 +572,8 @@
     }
 
     .review-form__item:first-of-type {
-      margin-right: 0;
-    }
-  }
-
-  .review-form__part--sightseeing {
-
-    .review-form__item:first-of-type {
       order: 1;
+      margin-right: 0;
     }
 
     .review-form__item:nth-of-type(3) {
@@ -617,5 +597,4 @@
     width: 480px;
     margin-bottom: 101px;
   }
-
 }
